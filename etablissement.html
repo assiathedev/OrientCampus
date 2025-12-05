@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Triple A Team">
+    <!-- Mots clés pour aider l'utilisateur à facilement touver notre site -->
+    <meta name="keywords" content="Portail d'Orientation Académique et Professionnelle,orientation,CV,concours,contrôles">
+    <meta name="description" content="OrientCampus by Triple A Team: Une platforme web innovante conçue pour guider les étudiants dans leur choix d'orientation professionnelle et académique ; pour découvrir leur métiers d'avenir !">
+    <title>Établissements et Formations - Orientation Académique</title>
+    <link rel="stylesheet" href="orientcampus.css">
+</head>
+<body>
+    
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="wrapper">
+                <!-- Logo -->
+                <div class="logo" title="Notre logo">
+                    <img src="image.png" alt="Notre Logo">
+                    <strong><em>OrientCampus</em></strong>
+                </div>
+                <!-- Menu Navigation -->
+                <ul class="menu">
+                    <li><a href="index.html" class="link">ACCUEIL</a></li>
+                    
+                    <!-- Parcours Académique -->
+                    <li class="dropdown">
+                        <a href="#parcours" class="link">PARCOURS ACADÉMIQUE ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="etablissement.html" class="sub-link">📚 Établissements et Formations</a></li>
+                            <li><a href="temoignages.html" class="sub-link">💬 Témoignages et Parcours</a></li>
+                            <li><a href="faq.html" class="sub-link">❓ FAQ OrientCampus</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Monde Professionnel -->
+                    <li class="dropdown">
+                        <a href="#monde" class="link">MONDE PROFESSIONNEL ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="metiers.html" class="sub-link">💼 Métiers et Débouchés</a></li>
+                            <li><a href="ressources.html" class="sub-link">🛠 Ressources et Outils</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contact Button -->
+                    <li>
+                        <a href="contact.html" class="contact-btn">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Trouve L'Établissement Qui Te Correspond !</h1>
+            <p class="hero-subtitle">Plus de 500 formations dans 50+ établissements à travers le Maroc .</p>
+        </div>
+    </section><br>
+
+    <!-- Button vers les filières (les cartes) -->
+    <section>
+        <div class="container">
+            <h1 class="section-title">Choisissez Votre Filiére !</h1>
+            <button class="filière-btn"><a href="#info">Informatique Appliquée</a></button>
+            <button class="filière-btn"><a href="#math">Mathématiques</a></button>
+            <button class="filière-btn"><a href="#phy">Physique</a></button>
+        </div>
+    </section><br><br>
+
+
+
+
+    <!-- CARDS SECTION -->
+
+                                <!-- Informatique Appliquée -->
+    <fieldset class="container" id="info">
+        <legend align="center"><h2>Informatique Appliquée</h2></legend>
+        <section >
+            <div class="estab-grid">
+                <!-- Carte 1 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏛</div>
+                        <span class="card-badge">15 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Nationale Supérieure d'Informatique et d'Analyse des Systèmes (ENSIAS)</h3>
+                    <p class="estab-location">📍 Rabat</p>
+                    <p class="estab-type">🏛 Université publique</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.7/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏫</div>
+                        <span class="card-badge new">11 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Marocaine des Sciences de l'Ingénieur <br> (EMSI)</h3>
+                    <p class="estab-location">📍 Marrakech</p>
+                    <p class="estab-type">🏫 École privée</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+                
+                <!-- Carte 3 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">📚</div>
+                        <span class="card-badge">8 formations</span>
+                    </div>
+                    <h3 class="estab-name">Institut Supérieur d'Ingénieurie et des Affaires (ISGA)</h3>
+                    <p class="estab-location">📍 Fès</p>
+                    <p class="estab-type">📚 Institut</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.3/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏛</div>
+                        <span class="card-badge">13 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Nationale des Sciences Appliquées <br>(ENSA Marrakech)</h3>
+                    <p class="estab-location">📍 Marrakech</p>
+                    <p class="estab-type">🏛 Université publique</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.5/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏫</div>
+                        <span class="card-badge new">13 formations</span>
+                    </div>
+                    <h3 class="estab-name">Université Mohammed VI Polytechnique <br>(UM6P)</h3>
+                    <p class="estab-location">📍 Benguerir</p>
+                    <p class="estab-type">🏫 École privée</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">📚</div>
+                        <span class="card-badge">10 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Supérieure de Management , d'Informatique et de Télécommunication (SUP MTI)</h3>
+                    <p class="estab-location">📍 Rabat</p>
+                    <p class="estab-type">📚 Institut</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.3/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </fieldset><br><br>
+    
+
+                                <!-- Mathématiques -->
+    <fieldset class="container" id="math">
+        <legend align="center"><h2>Mathématiques</h2></legend>
+        <section >
+            <div class="estab-grid">
+                <!-- Carte 1 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏛</div>
+                        <span class="card-badge">13 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Nationale des Sciences Appliquées (ENSA Marrakech)</h3>
+                    <p class="estab-location">📍 Marrakech</p>
+                    <p class="estab-type">🏛 Université publique</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.5/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏫</div>
+                        <span class="card-badge new">11 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Marocaine des Sciences de l'Ingénieur (EMSI)</h3>
+                    <p class="estab-location">📍 Casablanca</p>
+                    <p class="estab-type">🏫 École privée</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+                
+                <!-- Carte 3 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">📚</div>
+                        <span class="card-badge">7 formations</span>
+                    </div>
+                    <h3 class="estab-name">Institut National des Postes et Télécommunications (INPT)</h3>
+                    <p class="estab-location">📍 Rabat</p>
+                    <p class="estab-type">📚 Institut</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.1/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏛</div>
+                        <span class="card-badge">13 formations</span>
+                    </div>
+                    <h3 class="estab-name">Faculé des Sciences et Techniques de Settat (FST Settat)</h3>
+                    <p class="estab-location">📍 Settat</p>
+                    <p class="estab-type">🏛 Université publique</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.5/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏫</div>
+                        <span class="card-badge new">13 formations</span>
+                    </div>
+                    <h3 class="estab-name">Université Internationale de Casablanca (UIC)</h3>
+                    <p class="estab-location">📍 Casablanca</p>
+                    <p class="estab-type">🏫 École privée</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐ (3.4/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">📚</div>
+                        <span class="card-badge">14 formations</span>
+                    </div>
+                    <h3 class="estab-name">Institut National des Statistiques et d'Économie Appliquée (INSEA)</h3>
+                    <p class="estab-location">📍 Rabat</p>
+                    <p class="estab-type">📚 Institut</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.2/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </fieldset><br><br>
+    
+
+                                <!-- Physique -->
+    <fieldset class="container" id="phy">
+        <legend align="center"><h2>Physique</h2></legend>
+        <section >
+            <div class="estab-grid">
+                <!-- Carte 1 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏛</div>
+                        <span class="card-badge">12 formations</span>
+                    </div>
+                    <h3 class="estab-name">Université Mohammed V <br>(UM5)</h3>
+                    <p class="estab-location">📍 Rabat</p>
+                    <p class="estab-type">🏛 Université publique</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.6/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏫</div>
+                        <span class="card-badge new">11 formations</span>
+                    </div>
+                    <h3 class="estab-name">École Marocaine des Sciences de l'Ingénieur (EMSI)</h3>
+                    <p class="estab-location">📍 Marrakech</p>
+                    <p class="estab-type">🏫 École privée</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+                
+                <!-- Carte 3 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">📚</div>
+                        <span class="card-badge">7 formations</span>
+                    </div>
+                    <h3 class="estab-name">Institut National des Postes et Télécommunications (INPT)</h3>
+                    <p class="estab-location">📍 Rabat</p>
+                    <p class="estab-type">📚 Institut</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.1/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏛</div>
+                        <span class="card-badge">17 formations</span>
+                    </div>
+                    <h3 class="estab-name">Faculté des Sciences Semlalia (FSS Marrakech)</h3>
+                    <p class="estab-location">📍 Marrakech</p>
+                    <p class="estab-type">🏛 Université publique</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.5/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">🏫</div>
+                        <span class="card-badge new">13 formations</span>
+                    </div>
+                    <h3 class="estab-name">Université Internationale de Casablanca (UIC)</h3>
+                    <p class="estab-location">📍 Casablanca</p>
+                    <p class="estab-type">🏫 École privée</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐ (3.4/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="estab-card">
+                    <div class="card-header">
+                        <div class="estab-logo">📚</div>
+                        <span class="card-badge">8 formations</span>
+                    </div>
+                    <h3 class="estab-name">Institut Supérieur d'Ingénieurie et des Affaires (ISGA)</h3>
+                    <p class="estab-location">📍 Fès</p>
+                    <p class="estab-type">📚 Institut</p>
+                    <div class="card-footer">
+                        <div class="rating">⭐⭐⭐⭐ (4.3/5)</div>
+                        <button class="details-btn">Voir les détails →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </fieldset><br><br><br>
+
+
+
+    <!-- STATISTICS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Établissements partenaires</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Formations disponibles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">Villes couvertes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Étudiants orientés</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Tu n'as pas trouvé ce que tu cherches ?</h2>
+                <p class="cta-text">Contacte notre équipe d'orientation pour un accompagnement personnalisé</p>
+                <a href="contact.html" class="cta-btn" style="text-decoration: none;">Contacter un conseiller</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">OrientCampus - <br>Portail d'Orientation</h3>
+                    <p class="footer-text">Votre guide vers un avenir <br>académique réussi.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Liens Rapides</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="quiz.html" class="footer-link">Quiz</a></li>
+                        <li><a href="#info" class="footer-link">Filiére IAP</a></li>
+                        <li><a href="#math" class="footer-link">Filiére Math</a></li>
+                        <li><a href="#phy" class="footer-link">Filiére Physique</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="etablissement.html" class="footer-link">Établissements</a></li>
+                        <li><a href="metiers.html" class="footer-link">Métiers</a></li>
+                        <li><a href="temoignages.html" class="footer-link">Témoignages</a></li>
+                        <li><a href="ressources.html" class="footer-link">Ressources</a></li>
+                        <li><a href="faq.html" class="footer-link">F.A.Q</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Suivez-nous</h4>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/idlamineaya?igsh=MXFrcDR2bzQwbGVoMA==" class="social-icon">AI</a>
+                        <a href="https://www.instagram.com/assialaqchai?igsh=YXk2Y2FvbmJ5YzNw" class="social-icon">AL</a>
+                        <a href="https://www.instagram.com/chachapreciouska?igsh=bG0zeXN5d2hwcGpo" class="social-icon">AK</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portail d'Orientation Académique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

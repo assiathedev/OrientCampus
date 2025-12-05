@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Triple A Team">
+    <meta name="keywords" content="quiz orientation,test orientation,choix filière">
+    <meta name="description" content="Quiz d'orientation pour découvrir la filière qui te correspond">
+    <title>Quiz d'Orientation - OrientCampus</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="wrapper"> 
+                <!-- Logo -->
+                <div class="logo" title="Notre logo">
+                    <img src="image.jpg" alt="Logo OrientCampus">
+                    <strong><em>OrientCampus</em></strong>
+                </div>
+                
+                <!-- Menu Navigation -->
+                <ul class="menu">
+                    <li><a href="index.html" class="link">ACCUEIL</a></li>
+                    
+                    <!-- Parcours Académique -->
+                    <li class="dropdown">
+                        <a href="#parcours" class="link">PARCOURS ACADÉMIQUE ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="etablissement.html" class="sub-link">📚 Établissements et Formations</a></li>
+                            <li><a href="temoignages.html" class="sub-link">💬 Témoignages et Parcours</a></li>
+                            <li><a href="faq.html" class="sub-link">❓ FAQ Orientation</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Monde Professionnel -->
+                    <li class="dropdown">
+                        <a href="#monde" class="link">MONDE PROFESSIONNEL ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="metiers.html" class="sub-link">💼 Métiers et Débouchés</a></li>
+                            <li><a href="ressources.html" class="sub-link">🛠️ Ressources et Outils</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contact Button -->
+                    <li>
+                        <a href="contact.html" class="contact-btn">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-icon"></div>
+            <h1 class="hero-title">Découvre Ta Filière Idéale !</h1>
+            <p class="hero-subtitle">Un quiz personnalisé pour trouver la formation qui correspond à tes passions et tes talents</p>
+        </div>
+    </section>
+
+    <!-- QUIZ CONTAINER -->
+    <div class="quiz-wrapper" id="quiz">
+        <div class="quiz-container">
+            
+            <!-- Écran d'accueil -->
+            <div id="welcome-screen" class="screen active">
+                <div class="welcome-content">
+                    <div class="welcome-icon">🎓</div>
+                    <h2 class="welcome-title">Bienvenue au Quiz d'Orientation</h2>
+                    <p class="welcome-text">
+                        Ce quiz va t'aider à découvrir les filières qui correspondent le mieux à tes intérêts et compétences.
+                    </p>
+                    
+                    <div class="quiz-info">
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <span class="info-label">Durée : 3-5 minutes</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">❓</span>
+                            <span class="info-label">10 questions</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">✅</span>
+                            <span class="info-label">Résultats instantanés</span>
+                        </div>
+                    </div>
+                    
+                    <button class="start-btn" onclick="startQuiz()">
+                        Commencer le Quiz →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Écran des questions -->
+            <div id="quiz-screen" class="screen">
+                <!-- Barre de progression -->
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+                <div class="progress-text">
+                    Question <span id="currentQuestion">1</span> sur <span id="totalQuestions">10</span>
+                </div>
+
+                <!-- Question -->
+                <div class="question-container">
+                    <h2 class="question-title" id="questionTitle"></h2>
+                    <div class="options-container" id="optionsContainer"></div>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="quiz-navigation">
+                    <button class="nav-btn prev-btn" onclick="previousQuestion()" id="prevBtn" disabled>
+                        ← Précédent
+                    </button>
+                    <button class="nav-btn next-btn" onclick="nextQuestion()" id="nextBtn" disabled>
+                        Suivant →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Écran des résultats -->
+            <div id="result-screen" class="screen">
+                <div class="result-content">
+                    <div class="result-icon" id="resultIcon">🎉</div>
+                    <h2 class="result-title">Ton Profil d'Orientation</h2>
+                    
+                    <div class="profile-card" id="profileCard">
+                        <!-- Le résultat sera inséré ici par JavaScript -->
+                    </div>
+
+                    <div class="recommended-fields" id="recommendedFields">
+                        <!-- Les filières recommandées seront insérées ici -->
+                    </div>
+
+                    <div class="result-actions">
+                        <button class="action-btn primary" onclick="location.href='etablissement.html'">
+                            Voir les Établissements
+                        </button>
+                        <button class="action-btn secondary" onclick="restartQuiz()">
+                            Refaire le Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION POURQUOI CE QUIZ -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">Pourquoi Passer Ce Quiz ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Recommandations Personnalisées</h3>
+                    <p class="benefit-text">Obtiens des suggestions de filières basées sur tes réponses</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Rapide et Efficace</h3>
+                    <p class="benefit-text">Seulement 10 questions pour des résultats précis</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔬</div>
+                    <h3 class="benefit-title">Basé sur des Critères Réels</h3>
+                    <p class="benefit-text">Questions conçues par des conseillers d'orientation</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3 class="benefit-title">Découvre Ton Potentiel</h3>
+                    <p class="benefit-text">Identifie tes points forts et tes intérêts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Portail Orientation</h3>
+                    <p class="footer-text">Votre guide vers un avenir académique réussi.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Liens Rapides</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="#quiz" class="footer-link">Quiz</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="etablissement.html" class="footer-link">Établissements</a></li>
+                        <li><a href="metiers.html" class="footer-link">Métiers</a></li>
+                        <li><a href="temoignages.html" class="footer-link">Témoignages</a></li>
+                        <li><a href="ressources.html" class="footer-link">Ressources</a></li>
+                        <li><a href="faq.html" class="footer-link">F.A.Q</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Suivez-nous</h4>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/idlamineaya?igsh=MXFrcDR2bzQwbGVoMA==" class="social-icon">AI</a>
+                        <a href="https://www.instagram.com/assialaqchai?igsh=YXk2Y2FvbmJ5YzNw" class="social-icon">AL</a>
+                        <a href="#" class="social-icon">AK</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portail d'Orientation Académique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>

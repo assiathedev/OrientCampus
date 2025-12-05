@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Triple A Team">
+    <!-- Mots clés pour aider l'utilisateur à facilement touver notre site -->
+    <meta name="keywords" content="Portail d'Orientation Académique et Professionnelle,orientation,CV,concours,contrôles">
+    <meta name="description" content="OrientCampus by Triple A Team: Une platforme web innovante conçue pour guider les étudiants dans leur choix d'orientation professionnelle et académique ; pour découvrir leur métiers d'avenir !">
+    <title>Métiers et Débouchés-Orientation Académique</title>
+    <link rel="stylesheet" href="orientcampus.css">
+</head>
+<body>
+    
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="wrapper">
+                <!-- Logo -->
+                <div class="logo" title="Notre logo">
+                    <img src="image.png" alt="Notre Logo">
+                    <strong><em>OrientCampus</em></strong>
+                </div>
+                <!-- Menu Navigation -->
+                <ul class="menu">
+                    <li><a href="index.html" class="link">ACCUEIL</a></li>
+                    
+                    <!-- Parcours Académique -->
+                    <li class="dropdown">
+                        <a href="#parcours" class="link">PARCOURS ACADÉMIQUE ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="etablissement.html" class="sub-link">📚 Établissements et Formations</a></li>
+                            <li><a href="temoignages.html" class="sub-link">💬 Témoignages et Parcours</a></li>
+                            <li><a href="faq.html" class="sub-link">❓ FAQ OrientCampus</a></li>
+                        </ul>
+                    </li>
+
+                    
+                    <!-- Monde Professionnel -->
+                    <li class="dropdown">
+                        <a href="#monde" class="link">MONDE PROFESSIONNEL ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="metiers.html" class="sub-link">💼 Métiers et Débouchés</a></li>
+                            <li><a href="ressources.html" class="sub-link">🛠 Ressources et Outils</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contact Button -->
+                    <li>
+                        <a href="contact.html" class="contact-btn">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Construis Ta Carrière de Rêve !</h1>
+            <p class="hero-subtitle">Explore les métiers, compare les débouchés, trouve le parcours qui te mènera au succès professionnel</p>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Métiers Explorés</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Secteurs Couverts</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">💰</div>
+                    <div class="stat-label">Salaires Réels</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button vers les filières (les cartes) -->
+    <section>
+        <div class="container">
+            <h1 class="section-title">Choisissez Votre Filiére !</h1>
+            <button class="filière-btn"><a href="#info">Informatique Appliquée</a></button>
+            <button class="filière-btn"><a href="#math">Mathématiques</a></button>
+            <button class="filière-btn"><a href="#phy">Physique</a></button>
+        </div>
+    </section><br><br>
+
+
+
+    <!-- MÉTIERS GRID -->
+    <hr><br><br><h2 class="section-title">💼 Découvre les Métiers d'Avenir selon ta filière .</h2>
+
+                                <!-- Informatique Appliquée -->
+    <fieldset class="container" id="info">
+        <legend align="center"><h2>Informatique Appliquée</h2></legend>
+        <section class="metiers-section">
+            <div class="container">
+                <div class="metiers-grid">
+
+                    <!-- Métier 1 -->
+                    <div class="metier-card">
+                        <div class="metier-icon">💻</div>
+                        <h3 class="metier-title">Développeur Full-Stack</h3>
+                        <span class="metier-sector">Informatique</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>8 000 - 15 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 75%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : En forte croissance</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+3 à Bac+5</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Métier 2 -->
+                    <div class="metier-card" data-category="informatique">
+                        <div class="metier-icon">🔐</div>
+                        <h3 class="metier-title">Expert en Cybersécurité</h3>
+                        <span class="metier-sector">Informatique / Sécurité</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>12 000 - 25 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 90%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : Très forte demande</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+5 / Master</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">Cryptographie</span>
+                            <span class="skill-tag">Réseaux</span>
+                            <span class="skill-tag">Ethical Hacking</span>
+                        </div>
+                    </div>
+
+                    <!-- Métier 3 -->
+                    <div class="metier-card" data-category="informatique">
+                        <div class="metier-icon">🤖</div>
+                        <h3 class="metier-title">Data Scientist / IA</h3>
+                        <span class="metier-sector">Intelligence Artificielle</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>10 000 - 20 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 85%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : Métier d'avenir</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Master / Doctorat</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Big Data</span>
+                        </div>
+                    </div>
+
+                    <!-- Métier 4 -->
+                    <div class="metier-card" data-category="ingenierie">
+                        <div class="metier-icon">⚙</div>
+                        <h3 class="metier-title">Ingénieur Industriel</h3>
+                        <span class="metier-sector">Ingénierie</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>7 000 - 14 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 70%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : Stable</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : École d'ingénieurs</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">CAO/DAO</span>
+                            <span class="skill-tag">Lean Management</span>
+                            <span class="skill-tag">AutoCAD</span>
+                        </div>
+                    </div>
+
+                    <!-- Métier 5 -->
+                    <div class="metier-card" data-category="commerce">
+                        <div class="metier-icon">📊</div>
+                        <h3 class="metier-title">Chef de Projet Digital</h3>
+                        <span class="metier-sector">Commerce / Marketing</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>8 000 - 16 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 80%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : En croissance</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+3 à Bac+5</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">Marketing Digital</span>
+                            <span class="skill-tag">SEO/SEA</span>
+                            <span class="skill-tag">Analytics</span>
+                            <span class="skill-tag">Gestion de projet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </fieldset>
+
+                                <!-- Mathématiques -->
+    <fieldset class="container" id="math">
+        <legend align="center"><h2>Mathématiques</h2></legend>
+        <section class="metiers-section">
+            <div class="container">
+                <div class="metiers-grid">
+
+                    <!-- Métier 1 -->
+                    <div class="metier-card">
+                        <div class="metier-icon">🧮</div>
+                        <h3 class="metier-title">Spécialisye en actuariat</h3>
+                        <span class="metier-sector">Mathématiques</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>9 000 - 13 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 68%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : En forte croissance</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+3 à Bac+5</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">Analyse</span>
+                            <span class="skill-tag">Algèbre</span>
+                            <span class="skill-tag">probabilités</span>
+                        </div>
+                    </div>
+
+                    <!-- Métier 2 -->
+                    <div class="metier-card">
+                        <div class="metier-icon">🧮</div>
+                        <h3 class="metier-title">Analyste de donnée</h3>
+                        <span class="metier-sector">Mathématiques</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>9 000 - 13 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 68%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : En forte croissance</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+2 à Bac+5</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">Géométrie</span>
+                            <span class="skill-tag">Statistiques</span>
+                            <span class="skill-tag">Opérations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </fieldset>
+
+
+
+                                <!-- Physique -->
+    <fieldset class="container" id="phy">
+        <legend align="center"><h2>Physique</h2></legend>
+        <section class="metiers-section">
+            <div class="container">
+                <div class="metiers-grid">
+
+                    <!-- Métier 1 -->
+                    <div class="metier-card">
+                        <div class="metier-icon">🔬</div>
+                        <h3 class="metier-title">Espace & Aéronautique</h3>
+                        <span class="metier-sector">Physique</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>6 000 - 19 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 63%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : En forte croissance</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+3 à Bac+7</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">expériences scientifiques</span>
+                            <span class="skill-tag">Atome</span>
+                            <span class="skill-tag">électricité</span>
+                        </div>
+                    </div>
+
+                    <!-- Métier 1 -->
+                    <div class="metier-card">
+                        <div class="metier-icon">🔬</div>
+                        <h3 class="metier-title">Laboratoires & Tests</h3>
+                        <span class="metier-sector">Physique</span>
+                        <div class="metier-info">
+                            <div class="info-row">
+                                <span class="info-icon">💰</span>
+                                <span>13 000 - 21 000 MAD/mois</span>
+                            </div>
+                            <div class="salary-bar">
+                                <div class="salary-fill" style="width: 83%;"></div>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">📈</span>
+                                <span>Perspectives : En forte croissance</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-icon">🎓</span>
+                                <span>Formation : Bac+5 à Bac+8</span>
+                            </div>
+                        </div>
+                        <div class="metier-skills">
+                            <span class="skill-tag">expériences scientifiques</span>
+                            <span class="skill-tag">Atome</span>
+                            <span class="skill-tag">astronomie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">OrientCampus - <br>Portail d'Orientation</h3>
+                    <p class="footer-text">Votre guide vers un avenir <br>académique réussi.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Liens Rapides</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="quiz.html" class="footer-link">Quiz</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="etablissement.html" class="footer-link">Établissements</a></li>
+                        <li><a href="metiers.html" class="footer-link">Métiers</a></li>
+                        <li><a href="temoignages.html" class="footer-link">Témoignages</a></li>
+                        <li><a href="ressources.html" class="footer-link">Ressources</a></li>
+                        <li><a href="faq.html" class="footer-link">F.A.Q</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Suivez-nous</h4>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/idlamineaya?igsh=MXFrcDR2bzQwbGVoMA==" class="social-icon">AI</a>
+                        <a href="https://www.instagram.com/assialaqchai?igsh=YXk2Y2FvbmJ5YzNw" class="social-icon">AL</a>
+                        <a href="https://www.instagram.com/chachapreciouska?igsh=bG0zeXN5d2hwcGpo" class="social-icon">AK</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portail d'Orientation Académique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
